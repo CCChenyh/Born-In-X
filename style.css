@@ -43,7 +43,7 @@ ul li a{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-image: url("xin-back-1.jpg");
+	background-image: url("media/xin-back-1.jpg");
 	background-position: center; 
   	background-repeat: no-repeat; 
  	background-size: cover;
@@ -75,7 +75,7 @@ ul li a{
 	height: 100%;
 	left: 0;
 	top: 100%;
-	background-image: url("xin-front.png");
+	background-image: url("media/xin-front.png");
 	background-position: center; 
   	background-repeat: no-repeat; 
  	background-size: cover;
@@ -174,10 +174,12 @@ ul li a{
 #explore-start a:hover h4{
 	opacity: 1;
 	font-size: x-large;
+	transition: ease-in-out 320ms;
 }
 
 #explore-start a:hover h3{
 	opacity: 0;
+	transition: ease-in-out 320ms;
 }
 
 #follow-xin{
@@ -266,6 +268,7 @@ ul li a{
 	border: 3px solid #FFFFFF;
 	box-shadow: 0px 0px 300px #63EBE9;
 	z-index: 500;
+	transition: ease-in-out 320ms;
 }
 
 .music-singles{
@@ -287,6 +290,7 @@ ul li a{
 	border: 2px solid #FFFFFF;
 	box-shadow: 0px 0px 250px #63EBE9;
 	z-index: 500;
+	transition: ease-in-out 320ms;
 }
 
 .music-info{
@@ -329,10 +333,12 @@ ul li a{
 
 .music-singles:hover .music-info{
 	opacity: 1;
+	transition: ease-in-out 320ms;
 }
 
 .music-albums:hover .music-info{
 	opacity: 1;
+	transition: ease-in-out 320ms;
 }
 
 /* ———————————————————————————————————————— */
@@ -510,20 +516,24 @@ ul li a{
 .button-group .pink:hover{
 	background: rgba(235, 100, 230, 0.6);
 	box-shadow: 0px 0px 20px 5px rgba(235, 100, 230, 0.25), 0px 0px 60px 20px rgba(235, 100, 230, 0.25), inset 0px 0px 30px 10px rgba(235, 100, 230, 0.8);
-	color:white;
+	transition: ease-in-out 600ms;
 }
 
 .button-group .blue:hover{
 	background: rgba(99, 235, 233, 0.6);
 	box-shadow: 0px 0px 20px 5px rgba(99, 235, 233, 0.25), 0px 0px 60px 20px rgba(99, 235, 233, 0.25), inset 0px 0px 30px 10px rgba(99, 235, 233, 0.8);
-	color:white;
+	transition: ease-in-out 600ms;
 }
 
 .button-group .yellow:hover{
 	background: rgba(235, 181, 100, 0.6);
 	box-shadow: 0px 0px 20px 5px rgba(235, 181, 100, 0.25), 0px 0px 60px 20px rgba(235, 181, 100, 0.25), inset 0px 0px 30px 10px rgba(235, 181, 100, 0.8);
-	color: white;
+	transition: ease-in-out 600ms;
 }
+
+.button-group .blue:hover a{color: white;transition: ease-in-out 600ms;}
+.button-group .pink:hover a{color: white;transition: ease-in-out 600ms;}
+.button-group .yellow:hover a{color: white;transition: ease-in-out 600ms;}
 
 #sample1-2{
 	position: absolute;
@@ -614,9 +624,17 @@ ul li a{
 .fold-content .link-yellow{border: 2px solid #EBB564;}
 .fold-content .link-blue{}
 .fold-content .link-pink{}
-.fold-content .link-yellow:hover{background-color:rgba(235, 181, 100, 0.75); box-shadow: 0px 0px 20px 5px rgba(235, 181, 100, 0.25), 0px 0px 60px 20px rgba(235, 181, 100, 0.25), inset 0px 0px 20px rgba(235, 181, 100, 1);}
 .link-yellow a{color:#EBB564;}
-.fold-content button:hover a{color: white;}
+.fold-content .link-yellow:hover{
+	transition: ease-in-out 600ms;
+	background-color:rgba(235, 181, 100, 0.75); 
+	box-shadow: 0px 0px 20px 5px rgba(235, 181, 100, 0.25), 0px 0px 60px 20px rgba(235, 181, 100, 0.25), inset 0px 0px 20px rgba(235, 181, 100, 1);
+}
+
+.fold-content button:hover a{
+	color: white;
+	transition: ease-in-out 600ms;
+}
 
 .fold-content button a{
 	text-decoration: none;
@@ -768,7 +786,7 @@ ul li a{
 .sample2-show{
 	position: absolute;
 	width: 100%;
-	top: 90%;
+	top: 100%;
 	margin-right: -20%;
 	right: -30%;
 }
@@ -831,6 +849,17 @@ ul li a{
 }
 
 /* ----------------------------------------------- */
+
+#sample3 span a{
+	text-decoration: underline 2px solid;
+	color: black;
+}
+
+#sample3 span a:hover{
+	color: #63EBE9;
+	transition: ease-in-out 420ms;
+	text-decoration: none;
+}
 
 #sample3{
 	left: 8%;
@@ -912,7 +941,43 @@ ul li a{
 	border-radius: 0 0 22px 22px;
 }
 
+#sample4 .album-visit{
+	border: 2px solid #63EBE9;
+}
+
+#sample4 .album-visit a{
+	text-decoration: none;
+	color: #63EBE9;
+}
+#sample4 .album-visit:hover{
+	transition: ease-in-out 320ms;
+	background-color: rgba(99, 235, 233,0.75);
+	background-color:rgba(99, 235, 233, 0.75); box-shadow: 0px 0px 20px 5px rgba(99, 235, 233, 0.25), 0px 0px 60px 20px rgba(99, 235, 233, 0.25), inset 0px 0px 20px #63EBE9;
+}
+#sample4 .album-visit:hover a{
+	color: white;
+	transition: ease-in-out 320ms;
+}
+
 /* ---------------------------------------- */
+
+#sample4 button{
+	border: 2px solid #F9889F;
+}
+
+#sample4 button a{
+	text-decoration: none;
+	color: #F9889F;
+}
+#sample4 button:hover{
+	transition: ease-in-out 320ms;
+	background-color: rgba(249,136,159,0.75);
+	box-shadow: 0px 0px 20px 5px rgba(249,136,159, 0.25), 0px 0px 60px 20px rgba(249,136,159, 0.25), inset 0px 0px 20px #F9889F;
+}
+#sample4 button:hover a{
+	color: white;
+	transition: ease-in-out 320ms;
+}
 
 #sample5{
 	position: absolute;
