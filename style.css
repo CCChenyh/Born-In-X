@@ -602,7 +602,7 @@ ul li a{
 }
 
 .fold-content{
-	padding:5% 2% 25% 2%;
+	padding:0% 2% 25% 2%;
 	display: grid;
 	grid-template-columns: 30% 70%;	
 }
