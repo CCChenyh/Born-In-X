@@ -43,7 +43,7 @@ ul li a{
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-image: url("media/xin-back-1.jpg");
+	background-image: url("xin-back-1.jpg");
 	background-position: center; 
   	background-repeat: no-repeat; 
  	background-size: cover;
@@ -75,7 +75,7 @@ ul li a{
 	height: 100%;
 	left: 0;
 	top: 100%;
-	background-image: url("media/xin-front.png");
+	background-image: url("xin-front.png");
 	background-position: center; 
   	background-repeat: no-repeat; 
  	background-size: cover;
@@ -622,13 +622,25 @@ ul li a{
 }
 
 .fold-content .link-yellow{border: 2px solid #EBB564;}
-.fold-content .link-blue{}
-.fold-content .link-pink{}
+.fold-content .link-blue{border: 2px solid #63EBE9;}
+.fold-content .link-pink{border: 2px solid #EB64E6;}
 .link-yellow a{color:#EBB564;}
+.link-blue a{color:#63EBE9;}
+.link-pink a{color:#EB64E6;}
 .fold-content .link-yellow:hover{
 	transition: ease-in-out 600ms;
 	background-color:rgba(235, 181, 100, 0.75); 
 	box-shadow: 0px 0px 20px 5px rgba(235, 181, 100, 0.25), 0px 0px 60px 20px rgba(235, 181, 100, 0.25), inset 0px 0px 20px rgba(235, 181, 100, 1);
+}
+.fold-content .link-blue:hover{
+	transition: ease-in-out 600ms;
+	background: rgba(99, 235, 233, 0.6);
+	box-shadow: 0px 0px 20px 5px rgba(99, 235, 233, 0.25), 0px 0px 60px 20px rgba(99, 235, 233, 0.25), inset 0px 0px 30px 10px rgba(99, 235, 233, 0.8);
+}
+.fold-content .link-pink:hover{
+	transition: ease-in-out 600ms;
+	background: rgba(235, 100, 230, 0.6);
+	box-shadow: 0px 0px 20px 5px rgba(235, 100, 230, 0.25), 0px 0px 60px 20px rgba(235, 100, 230, 0.25), inset 0px 0px 30px 10px rgba(235, 100, 230, 0.8);
 }
 
 .fold-content button:hover a{
@@ -902,7 +914,8 @@ ul li a{
 	width: 100%;
 	background-color: #141414;
 	color:white;
-	padding:10% 0 15% 0;
+	padding:10% 0 25% 0;
+	margin-bottom: 0;
 }
 
 #sample4 h1{
@@ -963,6 +976,7 @@ ul li a{
 
 #sample4 button{
 	border: 2px solid #F9889F;
+	margin-top: 10%;
 }
 
 #sample4 button a{
@@ -981,7 +995,7 @@ ul li a{
 
 #sample5{
 	position: absolute;
-	top: 300%;
+	top: 305%;
 	width: 100%;
 	box-sizing: border-box;
 	background: rgba(249, 136, 159, 0.3);
