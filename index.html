@@ -1,91 +1,164 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Precipitation Visualization</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<title>BORN IN X | HOME</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class="nav">
-		<a href="https://ccchenyh.github.io/Born-In-X/"><img src="xin-logo.png" alt="" style="width: 4%; padding-left: 6%; margin-bottom: -3%;"></a>
-		<ul>
- 			<li><a href="#explore-start">EXPLORE</a></li>
- 			<li><a href="https://ccchenyh.github.io/Born-In-X/career.html">CAREER</a></li>
- 			<li><a href="https://ccchenyh.github.io/Born-In-X/dance.html">DANCE</a></li>
- 			<li><a href="https://ccchenyh.github.io/Born-In-X/music.html">MUSIC</a></li>
- 			<li><a href="https://ccchenyh.github.io/Born-In-X/award.html">AWARDS</a></li>
- 			<li><a href="https://ccchenyh.github.io/Born-In-X/#follow-xin">FOLLOW</a></li>
-		</ul>
+<div class="description">
+	<h1>Precipitation</h1>
+	<p>Data Visualization / Physicalizaiton</p>
+	<article style="font-size:15; font-weight: 400; padding-top: 1%; width: 100%;">The precitipation of China's major cities in 2021.</article>
+	<article style="font-style:italic; padding:3% 0 1% 0;">Select a city to view ></article>
+	<article style="width:30%;">The changes in precipitation during 12 months by visual and hearing sensors.</article>
+	<article style="padding-bottom:0; width:35%;">• visual: frame speed</article>
+	<article>• hearing: sound volume</article>
+	<article style="font-style: italic; font-size: 12; padding-top: 5%;width:30%;">The variations of precitipation among different cities is the consequences of multiple reasons, such as geological location, altitude, climate type. <br>Also, some extreme weather like typhoon and flooding can cause unusual precipitation, for example, "July 20 Heavy rainstorm in Zhengzhou", which intensity and scope exceeded historical records.</article>
+</div>
+<div class="china-map">
+	<div class="region region-hrb">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-hrb">Harbin</a></div>
 	</div>
+	<div class="region region-bj">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-bj">Beijing</a></div>
+	</div>
+	<div class="region region-zz">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-zz">Zhengzhou</a></div>
+	</div>
+	<div class="region region-cs">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-cs">Changsha</a></div>
+	</div>
+	<div class="region region-fz">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-fz">Fuzhou</a></div>
+	</div>
+	<div class="region region-hk">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-hk">Haikou</a></div>
+	</div>
+	<div class="region region-km">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-km">Kunming</a></div>
+	</div>
+	<div class="region region-cd">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-cd">Chengdu</a></div>
+	</div>
+	<div class="region region-ls">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-ls">Lhasa</a></div>
+	</div>
+	<div class="region region-xn">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-xn">Xining</a></div>
+	</div>
+	<div class="region region-wlmq">
+		<div class="dot"></div>
+		<div class="place place01"></div>
+		<div class="txt"><a href="#popup-wlmq">Urumqi</a></div>
+	</div>
+</div>
 
+<div id="popup-hrb" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/ttJ0Iejiw78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-	<section id="home-open">
-		<span>BORN IN <b style="-webkit-text-stroke:6px rgba(255, 255, 255, 0.75); color:transparent;">X</b></span>
-		<p style="color: #63EBE9; bottom:18%; left: 40%;">XIN (Yuxin) LIU</p>
-		<p style="color: #FFFFFF; bottom:10%; left: 46.5%; font-size:24px; ">0420</p>
-		<a href="#follow-xin" style="color: white; font-size: 14px; font-weight: bold; text-decoration: none; position: absolute; bottom: 8%; left: 7%;">FOLLOW XIN</a>
-	</section>
+<div id="popup-bj" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/4eQCAdoafT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-	<section id="about-xin">
-		<span><b style="-webkit-text-stroke:3px white; color:transparent;">XIN</b> LIU</span>
-		<p>SINGER / DANCER / PRODUCER</p>
-		<article>LIU Yuxin, known in English as XIN LIU, is a Chinese female pop singer, dancer, and producer born in Guizhou Province, China, on April 20th, 1997. She graduated from Beijing Contemporary Music Academy and Tianjin College of Media & Arts. She used to be the member of girl singing group Ladybees and THE9 in 2016 and 2020 respectivley, and now she becomes a solo artist.</article>
+<div id="popup-zz" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/KFjROsrXLL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-	<section id="explore-start">
-		<span style="-webkit-text-stroke:3px black; color:transparent;">X =</span>
-		<div class="explore-options">
-			<a href="https://ccchenyh.github.io/Born-In-X/explore1.html" class="card-1" style="top: 33%;right: 25%">
-				<div class="explore-card">
-					<h3>X = </h3><h4>HER POWER, <br>with infinite possibilites
-				</div>
-			</a>
+<div id="popup-cs" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/ttJ0Iejiw78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-			<a href="https://ccchenyh.github.io/Born-In-X/explore2.html" class="card-2" style="top: 27%;right: 31.5%;">
-				<div class="explore-card">
-					<h3>X = </h3><h4>To Be Yourself, <br>no format
-				</div>
-			</a>
+<div id="popup-fz" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/XYbPOIPquOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-			<a href="https://ccchenyh.github.io/Born-In-X/explore3.html" class="card-3" style="top: 38%;right: 36%;">
-				<div class="explore-card">
-					<h3>X = </h3><h4>Passion + Perssistence
-				</div>
-			</a>
+<div id="popup-hk" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/GYRt-drLrWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-			<a href="https://ccchenyh.github.io/Born-In-X/explore4.html" class="card-4" style="top: 51%;right: 32.5%;">
-				<div class="explore-card">
-					<h3>X = </h3><h4>Inheritance + Innovation
-				</div>
-			</a>
+<div id="popup-km" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/bcrkLI0fhz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-			<a href="https://ccchenyh.github.io/Born-In-X/explore5.html" class="card-5" style="top: 48.5%;right: 25.55%;">
-				<div class="explore-card">
-					<h3>X = </h3><h4>Shape with Love
-				</div>
-			</a>
-		</div>
-	</section>
+<div id="popup-cd" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/YKpSbx6s3kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-	<section id="follow-xin">
-		<p style="letter-spacing: 0.05em; font-size: 18px; top:15%; left: 15.25%; font-weight: 500;">FOLLOW</p>
-		<span>XIN</span>
-		<li>
-			<a href="https://weibo.com/u/5873553397?profile_ftype=1&is_all=1#_0">WEIBO @ 刘雨昕</a><br>
-			<a href="https://www.instagram.com/lyx0420/">INSTAGRAM @ lyx0420</a><br>
-			<a href="https://www.youtube.com/@xinliu627">YOUTUBE @ 劉雨昕 XIN LIU</a><br>
-			<a href="https://twitter.com/XinLiulyx0420?t=9WWCczBDeqr8_hN2UWMfrw&s=09">TIWTTER @XinLiulyx0420</a><br>
-			<a href="https://open.spotify.com/artist/3lxD7OESQHk5ESvrad8IGg?si=9FqHJSV_TOOPs35EGkVuIQ">SPOTIFY @ 劉雨昕</a><br>
-			<a href="https://y.qq.com/n/ryqq/singer/001uGW6E0C9wva">QQ MUSIC @ 刘雨昕</a><br>
-		</li>	
-		<p id="footer" style="font-color:#ADADAD; font-size: 8px; font-weight: 50; letter-spacing: 0.25em; bottom: 2%; align-items: center; text-align: center; left: 32.5%; display: flex;">COPYRIGHT © 2023 | DESIGNED BY CHEN |&nbsp  <a href="https://alexiacantore.github.io/nailbiter_critique/" style="font-style: italic; color: lightgrey;">Alexia's</a>&nbsp&&nbsp<a href="https://claudiacheon.github.io/GDProject2/" style="font-style: italic; color: lightgrey;">Claudia's</a>&nbsp Websites Here.</p>
-	</section>
+<div id="popup-ls" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/TF8Nro92cgk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
-	</section>
+<div id="popup-xn" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/DD6CBsecP1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+	</div>
+</div>
 
+<div id="popup-wlmq" class="overlay">
+	<div class="popup">
+		<iframe width="840" height="472.5" src="https://www.youtube.com/embed/UAHCS5nOKZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<a class="close" href="#">×</a>
+		<p>Please pause the video before closing it.</p>
+	</div>
+</div>
 
-</body>
+<script>
 	
+</script>
+</body>
 </html>
